@@ -1,4 +1,4 @@
-@import url(utilities.css);
+
 :root{
     /* --primary:#3DCFD3; */
     --primary:#DC143C;  /*Those are variables*/
@@ -18,18 +18,29 @@
     
     font-family: 'Ubuntu', sans-serif;
 }
+
+.flex{
+    display: flex;
+}
+.items-center{
+    align-items: center;
+}
+
+
 .container{
     max-width: 1152px;
     padding:0 15px;
     margin: 10px 0px 0px 100px ;
 
 }
+/* fixed background image */
 .home{
     display: flex;
-    background: url("g.jpg") no-repeat center;
+    background: url("images/background.jpg") no-repeat center;
     height: 100vh;
     background-size: cover;
 }
+
 header
 {
     /* background-color: var(--dark); */
@@ -59,6 +70,55 @@ header nav .right{
     margin-left: 3.5rem;
 }
 
+/* button css */
+/* ----------------------------------------------------------------------------- */
+.btn{
+    padding: 0.8rem 2.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 2px solid transparent;
+    outline: none;
+    cursor: pointer;
+    text-transform : uppercase;
+    transition: all .4s ease;
+    border-radius: 10px;
+}
+.btn-primary{
+    background: var(--primary);
+    color: var(--secondary);
+}
+.btn-primary:hover{
+    font-size: 17px;
+    background: transparent;
+    border-color: var(--primary) ;
+    color: var(--primary);
+}
+.btn-primary:active{
+    font-size: 16px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.btn-secondary
+{
+    background: transparent;
+    border-color: var(--primary) ;
+    color: var(--primary);
+    font-size: 18px;
+}
+.btn-secondary:hover{
+    font-size: 19px;
+    background: var(--primary);
+    color: var(--dark);
+}
+.btn-secondary:active{
+    margin-top: 15px;
+    margin-left: 10px;
+    font-size: 18px;
+}
+/* ----------------------------------------------------------------------------- */
+
+
+/* Name text */
 .home .text{
     color: var(--pure);
     padding-top: 95px;
@@ -80,5 +140,4 @@ header nav .right{
 .home .text .button{
     margin-top: 27px;
 }
-
 
