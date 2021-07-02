@@ -1,0 +1,84 @@
+@import url(utilities.css);
+:root{
+    /* --primary:#3DCFD3; */
+    --primary:#DC143C;  /*Those are variables*/
+    --sprimary:#d1193a;
+    --dark:#161616;
+    --pure:#FFFFFF;
+    --terary:#898989;
+    --light:#F2F2F2;
+}
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    -webkit-font-smoothing :antialiased;
+    
+    font-family: 'Ubuntu', sans-serif;
+}
+.container{
+    max-width: 1152px;
+    padding:0 15px;
+    margin: 10px 0px 0px 100px ;
+
+}
+.home{
+    display: flex;
+    background: url("g.jpg") no-repeat center;
+    height: 100vh;
+    background-size: cover;
+}
+header
+{
+    /* background-color: var(--dark); */
+    height: 800px;
+}
+header nav .left a{
+    color: var(--pure);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+header nav .left a:hover{
+    color: var(--primary);
+}
+
+header nav
+{
+    padding: 2rem 0;    /* 1 rem means 16px */
+    height: 100px;
+    width: 930px;
+}
+header nav .logo{
+    margin-right: 3rem;
+}
+header nav .right{
+    margin-left: 3.5rem;
+}
+
+.home .text{
+    color: var(--pure);
+    padding-top: 95px;
+}
+.home .text .t1{
+    font-size: 27px;
+}
+.home .text .t2{
+    font-size: 75px;
+}
+.home .text .t3{
+    font-size: 40px;
+}
+.home .text .t3 span{
+    font-size: 45px;
+    color: var(--primary);
+}
+
+.home .text .button{
+    margin-top: 27px;
+}
+
+
